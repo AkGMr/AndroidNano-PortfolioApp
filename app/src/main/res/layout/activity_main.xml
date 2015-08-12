@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/RelativeLayout"
+    android:background="#d3d3d3">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="      My Portfolio Apps     "
+        android:id="@+id/textView"
+        android:textColor="#010101"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Library App"
+        android:id="@+id/Library"
+        android:layout_below="@+id/Score"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginTop="10dp"
+        android:background="#a4c739"
+        android:onClick="library" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buid it Bigger"
+        android:id="@+id/Build"
+        android:layout_below="@+id/Library"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginTop="10dp"
+        android:background="#a4c739"
+        android:onClick="build" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capstone : My App"
+        android:id="@+id/Cap"
+        android:layout_marginTop="93dp"
+        android:layout_below="@+id/Build"
+        android:layout_alignLeft="@+id/Build"
+        android:layout_alignStart="@+id/Build"
+        android:layout_alignRight="@+id/Build"
+        android:layout_alignEnd="@+id/Build"
+        android:onClick="cap" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scores App"
+        android:id="@+id/Score"
+        android:layout_below="@+id/Spot"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:background="#a4c739"
+        android:layout_marginTop="10dp"
+        android:onClick="score" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spotify Streamer"
+        android:id="@+id/Spot"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/Score"
+        android:layout_alignStart="@+id/Score"
+        android:layout_alignRight="@+id/Score"
+        android:layout_alignEnd="@+id/Score"
+        android:background="#a4c739"
+        android:onClick="spotify" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XYZ Reader"
+        android:id="@+id/XYZ"
+        android:layout_below="@+id/Build"
+        android:layout_alignLeft="@+id/Cap"
+        android:layout_alignStart="@+id/Cap"
+        android:layout_alignRight="@+id/Build"
+        android:layout_alignEnd="@+id/Build"
+        android:layout_marginTop="10dp"
+        android:background="#a4c739"
+        android:onClick="xyz" />
+
+</RelativeLayout>
